@@ -6,61 +6,56 @@
     <title>My First HTML Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-
-        /* Type selector */
-    
-        h1 {
-            color: red;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        body{
+            padding: 2em;
         }
 
-        p {
-            text-decoration: underline;
-        }
-        /* Class Selector */
-
-        .warning {
-            color: #c00;
+        div{
+            padding: 2em;
+            border: 1px dashed #333;
         }
 
-        /* ID Selector */
+      .outside {
+        background-color: rgb(247, 180, 25);
+      }
 
-        #element {
-            border: 2px solid #f00;
-        }
+      .border{
+        background-color: antiquewhite;
+      }
 
-        /* CSS Combinator - Descendant */
+      .padding{
+        background-color: lightgreen;
+      }
 
-        article p {
-            text-align: justify;
-        }
+      .content{
+        background-color: lightblue;
+      }
 
-        article header h3 {
-
-        }
-
-        /* CSS Combinator - Direct Descendant / Child */
-
-        ul > li {
-            
-        }
+      .box{
+        border: 2px solid black;
+        margin: 2em;
+        padding: 0;
+        line-height: 3em;
+      }
 
     </style>
 </head>
 <body>
 
-    <h1>My Document Heading</h1>
-    <p>My first paragraph goes here</p>
-    
-    <h2>Heading level 2</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quod dicta placeat voluptatibus ex dignissimos facilis veritatis, deserunt officia earum aperiam officiis non quos, facere neque ratione a provident similique.</p>
+    <div class="outside">
+        <div class="border">
+            <div class="padding">
+                <div class="content">
+                    Some text
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <h3>Heading level 2</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quod dicta placeat voluptatibus ex dignissimos facilis veritatis, deserunt officia earum aperiam officiis non quos, facere neque ratione a provident similique.</p>
-
-    <h4>Heading level 2</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quod dicta placeat voluptatibus ex dignissimos facilis veritatis, deserunt officia earum aperiam officiis non quos, facere neque ratione a provident similique.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quod dicta placeat voluptatibus ex dignissimos facilis veritatis, deserunt officia earum aperiam officiis non quos, facere neque ratione a provident similique.</p>
+    <div class="box">
+        Text goes here<br>
+        dadasdada
+    </div>
 
 </body>
 </html>
