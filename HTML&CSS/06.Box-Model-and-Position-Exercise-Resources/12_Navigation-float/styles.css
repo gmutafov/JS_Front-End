@@ -1,0 +1,20 @@
+a {
+    color: rgb(0, 102, 0);
+}
+header nav{
+    border-bottom: 2px solid black;
+    float: right;
+}
+header p{
+    color: black;
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: bold;
+}
+header a{
+    color: rgb(0, 102, 0);
+    text-decoration: none;
+}
+header li{
+    display: inline-block;
+}
