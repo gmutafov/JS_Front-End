@@ -72,6 +72,7 @@ cite {
     display: block;
     text-align: right;
     padding: 1em;
+    margin: 1em;
 }
 
 article header .frame {
