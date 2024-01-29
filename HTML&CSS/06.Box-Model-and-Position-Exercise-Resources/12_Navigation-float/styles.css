@@ -71,6 +71,7 @@ blockquote {
 cite {
     display: block;
     text-align: right;
+    padding: 1em;
 }
 
 article header .frame {
