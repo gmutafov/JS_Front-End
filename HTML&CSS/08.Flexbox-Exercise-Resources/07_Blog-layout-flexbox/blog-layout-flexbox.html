@@ -72,11 +72,44 @@
             padding-right: 1em;
             border-right: 1px solid #ccc;
         }
+        .site-title{
+            font-size: 3em;
+            line-height: 1;
+            font-weight: bold;
+            padding: 0;
+        }
+        .site-header{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav ul{
+            display: flex;
+        }
+        nav li{
+            list-style: none outside;
+            padding: 0.5em;
+        }
+        nav a{
+            display: block;
+            padding: 0.5em 1.5em;
+            text-decoration: none;
+            color: green;
+        }
     </style>
 </head>
 <body>
     <div class="page">
-        <hreader class="site-header"><p class="site-title">Site Title</p></hreader>
+        <hreader class="site-header">
+            <p class="site-title">Site Title</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Stuff</a></li>
+                </ul>
+            </nav>
+        </hreader>
         <main class="site-main">
             <h1>Heading level 1</h1>
             <img class="align-right" src="images/Image1.jpg">
@@ -100,14 +133,14 @@
                     <aside class="side-bar">
                         <h3>Categories</h3>
                         <ul> 
-                            <li>Stuff</li>
-                            <li>Something</li>
-                            <li>Important</li>
-                            <li>Dogs</li>
-                            <li>Social</li>
-                            <li>Facebook</li>
-                            <li>Twitter</li>
-                            <li>Google+ really?</li>
+                            <li><a href="#">Stuff</a></li>
+                            <li><a href="#">Something</a></li>
+                            <li><a href="#">Important</a></li>
+                            <li><a href="#">Dogs</a></li>
+                            <h3>Social</h3>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Google+ really?</a></li>
                         </ul>
                     </aside> 
                 </div>
