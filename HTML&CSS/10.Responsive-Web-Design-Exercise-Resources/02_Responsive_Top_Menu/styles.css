@@ -13,7 +13,7 @@ body {
 }
 
 body > * {
-    background-color: skyblue;
+    background-color: lightskyblue;
     border-radius: 0.2em;
     padding: 1em;
 }
@@ -73,9 +73,16 @@ header nav ul li a {
         flex-direction: column;
         gap: 2em;
     }
+    header h1{
+        align-self: flex-start;
+    }
     
     header nav ul {
         flex-direction: column;
         gap: 2em;
     }
+    main{
+        flex: 1 1 100%
+    }
+    
 }
