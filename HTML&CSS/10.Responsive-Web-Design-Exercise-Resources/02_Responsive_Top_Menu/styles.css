@@ -48,3 +48,34 @@ main {
 main a {
     text-decoration: none;
 }
+
+header  nav {
+    flex: 1 0 0;
+}
+
+header nav ul{
+    display: flex;  
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+@media (max-width: 500px){
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 2em;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
