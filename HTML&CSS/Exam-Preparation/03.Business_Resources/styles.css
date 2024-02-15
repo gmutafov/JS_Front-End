@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 20px/1.5 "PT Sans", sans-serif;
+}
+h1, h2, h3, h4, h5, h6{font-family: "PT Serif";}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.site-section.banner {
+    background: #010532;
+}
+
+.site-section.banner .container {
+    color: #fff;
+}
+.site-section.banner h2{
+    font-size: 3.4em;
+    font-weight: normal;
+    line-height: 1.26;
+    margin-bottom: 1rem;
+}
+.site-section.banner p{
+    max-width: 39.5rem;
+    font-size: 1.2em;
+}
+.site-section {
+    padding: 2em;
+}
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    background: #010532;
+}
+
+.site-header nav ul{
+    display: flex;
+}
+
+.site-header nav li{
+    list-style: none outside;
+}
+.site-title a{
+    display: block;
+    width: 130px;
+    height: 110px;
+    overflow: hidden;
+    text-indent: -200vw;
+    background-image: url(images/logo.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.site-section.columns {
+    border-bottom: 2px solid #ccc;
+}
+
+.site-footer{
+    background-color: #171720;
+}
