@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .sponsors li {
     display: block;
-    width: 5em;
+    width: 9em;
     aspect-ratio: 1/1;
     background-color: #eee;
     padding: 1em;
@@ -131,4 +131,26 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.site-section.sponsors h2,
+.site-section.partners h2{
+    color: #B0825C;
+}
+
+.button {
+    text-decoration: none;
+    color: #B0825C;
+    border: 1px solid #B0825C;
+    padding: 0.5em 1em;
+    margin: 0.95em;
+    font-size: 1em;
+}
+
+.site-section.site-footer ul li{
+    list-style: none;
+    color: #B3A6A8;
+}
+.site-footer .container p{
+    color: #B3A6A8;
 }

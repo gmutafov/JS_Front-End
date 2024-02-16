@@ -2,7 +2,7 @@
     body{
         font-size: 12px;
     }
-
+    
     .max-width-container{
         padding-left: 12px;
         padding-right: 12px;
@@ -13,7 +13,7 @@
     .home-header{
         padding: 12px 0;
     }
-
+    
     .home-header .navbar-link{
         display: none;
     }
@@ -43,7 +43,7 @@
         align-items: stretch;
     }
     .home-left4{
-       padding: 20px 0;
+        padding: 20px 0;
     }  
     .home-content{
         width: 100%;
@@ -73,6 +73,6 @@
         margin-right: 0;
     }
     .home-links-container{
-    flex-direction: column;
+        flex-direction: column;
     }
 }
