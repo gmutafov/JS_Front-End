@@ -23,9 +23,9 @@ function solve(km, road){
         return console.log(`Driving ${km} km/h in a ${speedLimit} zone`);
     }
     let status = '' 
-    if (speedDiff < 20){
+    if (speedDiff <= 20){
         status = 'speeding';
-    } else if ( speedDiff < 40){
+    } else if (speedDiff <= 40){
         status = 'excessive speeding';
     } else{
         status = 'reckless driving';
@@ -35,7 +35,4 @@ function solve(km, road){
 }
 
 
-solve(40, 'city');
-solve(21, 'residential');
-solve(120, 'interstate');
-solve(200, 'motorway');
+solve(70, 'city');
