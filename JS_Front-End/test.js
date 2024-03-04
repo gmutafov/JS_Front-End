@@ -1,9 +1,6 @@
-let a = 5;
-let b = 6;
-console.log(a + b);
+function solve(n){
+    let result = n * 2;
+    console.log(result);
+}
 
-var c = 30;
-var n = 40;
-console.log(c - n);
-
-const pi = 3.14;
+solve(2);
