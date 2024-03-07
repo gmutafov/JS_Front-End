@@ -1,11 +1,16 @@
 function solve(nums){
-    let evenSum;
-    let oddSum;
-    for (let num of nums){
-        if (num % 2 === 0){
-            evenSum += num
-        } else{
-            oddSum += num
+    let evenSum = 0;
+    let oddSum = 0;
+
+    let numString = Math.abs(nums).toString();
+
+    for (let i = 0; i < numString.length; i++) {
+        let digit = parseInt(numString[i]);
+
+        if (digit % 2 === 0) {
+            evenSum += digit;
+        } else {
+            oddSum += digit;
         }
     }
     console.log(`Odd sum = ${oddSum}, Even sum = ${evenSum}`)
