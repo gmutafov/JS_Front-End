@@ -1,8 +1,9 @@
 function solve(n){
-    const printRow = (num) => new Array(7).fill(num).join(' ')
+    const createRow = (num) => new Array(num).fill(num).join(' ')
+
     for (let i = 0; i < n; i++){
-        console.log(printRow(n))
+        console.log(createRow(n))
     }
 }
 
-solve(7)
+solve(2)
