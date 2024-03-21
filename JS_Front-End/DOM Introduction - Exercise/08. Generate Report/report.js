@@ -1,36 +1,32 @@
 function generateReport() {
-    const thElements = document.querySelectorAll('table thead th');
-    const trElements = document.querySelectorAll('table tbody tr');
-    const outputElement = document.getElementById('output');
+    let checkBoxes = document.querySelectorAll('input')
 
-    const columns = Array
-        .from(thElements)
-        .map(thElement => {
-            const checkboxElement = thElement.querySelector('input[type=checkbox]');
+    let checked = [];
 
-            return {
-                name: thElement.textContent.toLowerCase().trim(),
-                active: checkboxElement.checked
-            };
-        });
+    for (let i = 0; i < checkBoxes.length; i++) {
+        const element = checkBoxes[i];
+        if (element.checked) {
+            checked.push(i);
+        }
+    }
+    let rows = document.getElementsByTagName('tr');
+    let rowsArr = Array.from(rows);
+    rowsArr.shift(); //headers
 
-    const reportData = Array
-        .from(trElements)
-        .map(trElement => {
-            const tdElements = trElement.querySelectorAll('td');
+    let result = [];
 
-            const result = Array
-                .from(tdElements)
-                .filter((tdElement, i) => columns[i].active)
-                .reduce((data, tdElement, i) => {
-                    const columnName = columns[i].name;
-                    data[columnName] = tdElement.textContent;
+    for (let row of rowsArr) {
+        let info = {};
+        for (let i of checked) {
+            let name = checkBoxes[i].name;
+            let rowInfo = row.children[i].textContent;
+            info[name] = rowInfo;
+        }
+        result.push(info)
+    }
+    report = JSON.stringify(result);
 
-                    return data;
-                }, {})
+    let outputElement = document.getElementById('output');
+    outputElement.textContent = report;
 
-            return result;
-        })
-
-    outputElement.value = JSON.stringify(reportData, null, 2);
 }
